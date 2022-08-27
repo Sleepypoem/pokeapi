@@ -28,6 +28,68 @@
   color: #61dafb;
 }
 
+.loading-container{
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokeball{
+  height: 150px;
+  width: 150px;
+  border: 13px solid #383b4f;
+  border-radius: 50%;
+  background-image: linear-gradient(#f51939 60px, #fff 60px);
+  position:relative;
+  animation: App-logo-spin 2s infinite;
+}
+
+.pokeball::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 145px;
+  background-color: #383b4f;
+  top:53px;
+  left: -10px;
+  
+}
+
+.pokeball::after{
+  position: absolute;
+  content: "";
+  height: 45px;
+  width:45px;
+  background-image: radial-gradient(
+    #fff 0px, #fff 5px, #383b4f 5px, #383b4f 7px, #fff 7px, #fff 16px, #383b4f 16px
+    );
+    border-radius: 50%;
+    top: 38px;
+    right: 41px;
+}
+
+.btn-circle, .btn-xl {
+			width: 50px;
+			height: 50px;
+			border-radius: 60px;
+			font-size: 25px;
+			text-align: center;
+		}
+
+.pagination-input{
+width: 30px;
+text-align: center;
+border: 0;
+    
+}
+
+.pagination-label{
+  margin-top: 12px;
+  margin-left: 8px;
+  font-weight: bolder;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
